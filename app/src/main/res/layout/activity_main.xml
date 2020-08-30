@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lay_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--内容-->
+    <LinearLayout
+        android:id="@+id/lay_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#44ff69b4"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!--底部的RadioGroup-->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#FF69B4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_home_drawable_selector"
+            android:background="#00000000"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_class"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_class_drawable_selector"
+            android:background="#00000000"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_user_drawable_selector"
+            android:background="#00000000"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>
